@@ -28,6 +28,11 @@
             <artifactId>scala-library</artifactId>
             <version>2.12.11</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>1.9.2</version>
+        </dependency>
     </dependencies>
 
     <distributionManagement>
@@ -77,7 +82,8 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>src/main/avro</source>
+                                <source>src/main/avro/</source>
+                                <source>target/generated-sources/</source>
                             </sources>
                         </configuration>
                     </execution>
