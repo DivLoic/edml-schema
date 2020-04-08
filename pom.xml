@@ -8,6 +8,9 @@
     <artifactId>edml-schema</artifactId>
     <version>0.1.1-SNAPSHOT</version>
 
+    <properties>
+        <maven.username/>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.scala-lang</groupId>
@@ -16,6 +19,13 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub ${maven.username} Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/${maven.username}/edml-schema</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
