@@ -19,7 +19,7 @@
         <profile>
             <id>default</id>
             <properties>
-                <maven.usernam>${MAVEN_USERNAME}</maven.usernam>
+                <maven.username>${MAVEN_USERNAME}</maven.username>
             </properties>
             <repositories>
                 <repository>
@@ -31,7 +31,7 @@
                 <repository>
                     <id>github</id>
                     <name>GitHub ${action.owner} Apache Maven Packages</name>
-                    <url>https://maven.pkg.github.com/${action.owner}/edml-schema</url>
+                    <url>https://maven.pkg.github.com/${maven.username}/edml-schema</url>
                 </repository>
             </repositories>
         </profile>

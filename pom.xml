@@ -6,11 +6,22 @@
 
     <groupId>fr.xebia.gbildi</groupId>
     <artifactId>edml-schema</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
 
     <properties>
         <maven.username/>
+
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <scala-maven-plugin.version>4.3.1</scala-maven-plugin.version>
+        <avrohugger-maven-plugin.version>1.6</avrohugger-maven-plugin.version>
+        <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.scala-lang</groupId>
@@ -32,6 +43,7 @@
             <plugin>
                 <groupId>net.alchim31.maven</groupId>
                 <artifactId>scala-maven-plugin</artifactId>
+                <version>${scala-maven-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>add-generated-sources</id>
@@ -55,6 +67,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
+                <version>${build-helper-maven-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>add-source</id>
@@ -74,6 +87,7 @@
             <plugin>
                 <groupId>at.makubi.maven.plugin</groupId>
                 <artifactId>avrohugger-maven-plugin</artifactId>
+                <version>${avrohugger-maven-plugin.version}</version>
                 <executions>
                     <execution>
                         <phase>generate-sources</phase>
