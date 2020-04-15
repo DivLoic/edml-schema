@@ -24,12 +24,24 @@
       "type": "int"
     },
     {
+      "name": "weekofyear",
+      "type": "int"
+    },
+    {
+      "name": "year",
+      "type": "int"
+    },
+    {
       "name": "pickup_zone_name",
       "type": "string"
     },
     {
       "name": "dropoff_zone_name",
       "type": "string"
+    },
+    {
+      "name": "distance",
+      "type": "float"
     },
     {
       "name": "passenger_count",
