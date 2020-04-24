@@ -4,10 +4,6 @@
   "namespace": "fr.xebia.gbildi",
   "fields": [
     {
-      "name": "label",
-      "type": "string"
-    },
-    {
       "name": "uuid",
       "type": "string",
       "logicalType": "uuid"

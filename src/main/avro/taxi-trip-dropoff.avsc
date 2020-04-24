@@ -4,6 +4,10 @@
   "namespace": "fr.xebia.gbildi",
   "fields": [
     {
+      "name": "borough",
+      "type": "string"
+    },
+    {
       "name": "dropoff_datetime",
       "type": {
         "type": "long",
