@@ -12,7 +12,7 @@
       "type": "int"
     },
     {
-      "name": "sum_mse",
+      "name": "sum_error",
       "type": "float"
     },
     {
