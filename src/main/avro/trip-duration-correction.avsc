@@ -23,7 +23,7 @@
       "type": "string"
     },
     {
-      "name": "mse",
+      "name": "sqrt_error",
       "type": "float"
     }
   ]
