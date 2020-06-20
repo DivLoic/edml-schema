@@ -1,6 +1,11 @@
 # EDML Schema
 ###### Schemas from the [event driven ml](https://blog.loicmdivad.com/talks/event-driven-machine-learning-xebicon19/) experiment
 
+## About EDML
+Event Driven Machine Learning is an experiment ran by 
+[@DivLoic](https://github.com/DivLoic) and [@Giulbia](https://github.com/giulbia).
+The idea is to bring together all the components to build a system serving prediction in realtime.  
+
 ## Why?
 
 ## How?
