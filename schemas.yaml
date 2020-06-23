@@ -1,0 +1,30 @@
+schemas:
+
+  - subject: EDML-PREDICTION-TOPIC-key
+    file: key-class.avsc
+
+  - subject: TAXI-TRIP-DROPOFF-REPLAY-key
+    file: key-class.avsc
+
+  - subject: TAXI-TRIP-PICKUP-REPLAY-key
+    file: key-class.avsc
+
+  - subject: EDML-MODEL-TOPIC-key
+    file: model-key.avsc
+
+  - subject: TAXI-TRIP-DROPOFF-REPLAY-value
+    file: taxi-trip-dropoff.avsc
+
+  - subject: TAXI-TRIP-PICKUP-REPLAY-value
+    file: taxi-trip-pickup.avsc
+
+  - subject: EDML-MODEL-TOPIC-value
+    file: tf-saved-model.avsc
+
+  - subject: EDML-PREDICTION-TOPIC-value
+    file: trip-duration-prediction.avsc
+
+  - subject: EDML-TRIP-SCORING-KTABLE-SUPPRESS-STATE-STORE-0000000018-changelog-value
+    # TODO: Name this processor / internal topic
+    file: aggregated-score.avsc
+
