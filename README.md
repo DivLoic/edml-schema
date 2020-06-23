@@ -13,9 +13,9 @@ the EDML project discuss the important points leading to model serving automatio
 
 ## Why?
 In order to share the same schemas between the modules:
-- [edml-replay](https://github.com/DivLoic/event-driven-ml/edml-replay/): app generating the validation and test data points
-- [edml-serving](https://github.com/DivLoic/event-driven-ml/edml-serving/): app creating the prediction
-- [edml-scoring](https://github.com/DivLoic/event-driven-ml/edml-scoring/): app join the prediction to the actual result
+- [edml-replay](https://github.com/DivLoic/event-driven-ml/tree/master/edml-replay/): app generating the validation and test data points
+- [edml-serving](https://github.com/DivLoic/event-driven-ml/tree/master/edml-serving/): app creating the prediction
+- [edml-scoring](https://github.com/DivLoic/event-driven-ml/tree/master/edml-scoring): app join the prediction to the actual result
 
 This module gather all the avro schemas. After the schema validation, the module generates plain java objects, 
 add thel into a [maven package](https://github.com/DivLoic/edml-schema/packages/176609) to be used by all the listed module.
