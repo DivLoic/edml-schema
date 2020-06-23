@@ -25,6 +25,13 @@ jobs:
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
 
+      - name: Schema Validation
+        uses: divloic/ccloud-registry-action@v0.0.1
+        with:
+          schema-registry-url: ${{ secrets.SCHEMA_REGISTRY_URL }}
+          schema-registry-api-key: ${{ secrets.SCHEMA_REGISTRY_API_KEY }}
+          schema-registry-secret-key: ${{ secrets.SCHEMA_REGISTRY_SECRET_KEY }}
+
       - name: Maven Code Generation
         run: ./mvnw -B avrohugger:generate-scala-sources
 
